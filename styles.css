@@ -161,13 +161,18 @@ p {
     /* Adjust padding */
     display: flex;
     align-items: center;
-    width: 148px;
+    width: 155px;
     height: 34px;
     font-size: 16px;
     font-weight: 700;
     line-height: 24px;
     text-align: center;
     cursor: pointer;
+}
+
+.startBtn a{
+    text-decoration: none;
+
 }
 
 .startBtn_4 {
