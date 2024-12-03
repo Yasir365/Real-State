@@ -21,6 +21,7 @@
     max-width: 1933px !important;
     /* Set a max width for the footer */
     margin: 0 auto;
+    margin-top: 12rem;
     /* Center the footer horizontally */
     background-image: url(./images/footer.png);
     /* background-size: contain; */
