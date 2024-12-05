@@ -1,19 +1,19 @@
-.TotalValue{
+.TotalValue {
     color: #1F92F6;
 }
 
-.cardSection{
+.cardSection {
     width: 100%;
     height: 522px;
     top: 343px;
     left: 203px;
     gap: 0px;
-    border-radius: 40px ;
-    opacity: 0px;   
+    border-radius: 40px;
+    opacity: 0px;
 }
 
-.card1{
-    background-color: #f9f9f9; /* Adjust background as needed */
+.card1 {
+    background-color: #f9f9f9;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     width: 1399px;
@@ -25,39 +25,37 @@
 
 }
 
-.cardImg{
+.cardImg {
     width: 100%;
-    /* max-width: 120px;  */
-    /* height: 439px; */
     top: 385px;
     left: 261px;
     gap: 0px;
-    border-radius:20px;
+    border-radius: 20px;
     opacity: 0px;
 
 }
 
-.cardContent{
+.cardContent {
     width: 802px;
     height: 395px;
-    margin-left: 0; 
+    margin-left: 0;
     gap: 0px;
     border-radius: 9999px 0px 0px 0px;
     opacity: 0px;
 
 }
 
-.card2_Content{
+.card2_Content {
     width: 802px;
     height: 395px;
-    margin-left: 0; 
+    margin-left: 0;
     gap: 0px;
     border-radius: 9999px 0px 0px 0px;
     opacity: 0px;
 
 }
 
-.cardContentTilte{
+.cardContentTilte {
     width: 802px;
     height: 49px;
     top: 407px;
@@ -71,21 +69,21 @@
     text-align: left;
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
-    
+
 }
 
-.cardDesc{
+.cardDesc {
     font-family: Lato;
-font-size: 20px;
-font-weight: 400;
-line-height: 28px;
-text-align: left;
-text-underline-position: from-font;
-text-decoration-skip-ink: none;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
 
 }
 
-.card2_title{
+.card2_title {
     width: 576px;
     height: 34px;
     top: 957px;
@@ -93,13 +91,13 @@ text-decoration-skip-ink: none;
     gap: 0px;
     opacity: 0px;
     font-family: JetBrains Mono;
-font-size: 40px;
-font-weight: 800;
-line-height: 33.53px;
-text-align: left;
-text-underline-position: from-font;
-text-decoration-skip-ink: none;
-    
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 33.53px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+
 }
 
 .visitBtn {
@@ -107,7 +105,8 @@ text-decoration-skip-ink: none;
     color: #ffffff;
     border: none;
     border-radius: 20px;
-    padding: 8px 12px; /* Adjust padding */
+    padding: 8px 12px;
+    /* Adjust padding */
     display: flex;
     align-items: center;
     width: 148px;
@@ -122,47 +121,45 @@ text-decoration-skip-ink: none;
 
 /* Default (Desktop) Styles */
 .pendingProps {
-    width: 100%; /* Ensure full width responsiveness */
-    max-width: 1512px; /* Keep original width for desktop */
-    height: 144px; /* Fixed height for desktop */
-    /* padding: 19px 72px 18px 72px; */
+    width: 100%;
+    max-width: 1512px;
+    height: 144px;
     gap: 0px;
-    
-    border-radius: 8px; /* Optional: Smooth corners */
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Optional: Add shadow */
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-.pendingProps img{
+.pendingProps img {
     border-radius: 20px;
 }
 
 .Voting {
     display: flex;
     align-items: center;
-    position: relative; /* Position relative for absolute positioning of the ball */
+    position: relative;
     background-image: url('./images/contact.png');
-    background-size: cover; /* Make sure the contact image covers the container */
+    background-size: cover;
     width: 1514px;
     height: 180px;
     gap: 0px;
-    opacity: 0px;    
+    opacity: 0px;
     border-radius: 35.4px;
-    overflow: hidden; /* Ensure no overflow of ball image */
+    overflow: hidden;
 }
 
 .Voting::before {
-    content: ''; /* Create a pseudo-element */
-    position: absolute; /* Position it absolutely within the container */
-    top: 20px; /* Adjust as needed */
-    left: 20px; /* Adjust as needed */
+    content: '';
+    position: absolute;
+    top: 20px;
+    left: 20px;
     background-image: url('./images/balls.png');
-    background-size: contain; /* Adjust size to fit */
-    width: 100%; /* Set the desired width */
-    height: 100vh; /* Set the desired height */
-    z-index: 1; /* Ensure it's above the background */
+    background-size: contain;
+    width: 100%;
+    height: 100vh;
+    z-index: 1;
 }
 
-.voting_font{
+.voting_font {
     font-family: Lato;
     font-size: 42px;
     font-weight: 900;
@@ -173,7 +170,7 @@ text-decoration-skip-ink: none;
     color: #ffffff;
 }
 
-.proposal{
+.proposal {
     width: 246px;
     height: 50px;
     top: 66px;
@@ -186,170 +183,171 @@ text-decoration-skip-ink: none;
     justify-content: center;
 }
 
-.proposalParent{
+.proposalParent {
     display: flex;
     gap: 10px;
 }
 
-/* Tablet View (max-width: 992px) */
 @media (max-width: 992px) {
     .pendingProps {
-        flex-wrap: wrap; /* Stack items vertically */
-        height: auto; /* Let height adjust dynamically */
-        gap: 1rem; /* Add spacing between items */
+        flex-wrap: wrap;
+        height: auto;
+        gap: 1rem;
     }
 
     .pendingProps span {
-        flex: 1 1 100%; /* Make each item full width */
-        text-align: center; /* Center-align content */
+        flex: 1 1 100%;
+        text-align: center;
         justify-content: center;
     }
 
     .pendingProps img {
-        width: 50%; /* Center the image */
+        width: 50%;
     }
 
     .visitBtn {
-        width: 100%; /* Full-width button */
+        width: 100%;
         justify-content: center;
     }
-    .pendingListing{
+
+    .pendingListing {
         margin-top: 5rem !important;
     }
-    .disply{
+
+    .disply {
         display: none !important;
     }
-    .display{
+
+    .display {
         display: flex !important;
     }
-    .voteSection{
+
+    .voteSection {
         flex-direction: column;
         justify-content: center;
         gap: 10px;
     }
-    .voting_font{
+
+    .voting_font {
         justify-content: center;
     }
-    .proposal{
+
+    .proposal {
         width: 100%;
     }
-    .proposalParent{
+
+    .proposalParent {
         display: flex;
         flex-direction: column;
         gap: 10px;
     }
 }
 
-/* Mobile View (max-width: 576px) */
 @media (max-width: 576px) {
     .pendingProps {
-        padding: 10px; /* Reduce padding for mobile */
-        gap: 0.5rem; /* Smaller gaps for compact layout */
+        padding: 10px;
+        gap: 0.5rem;
     }
 
     .pendingProps img {
-        width: 50%; /* Smaller image size */
+        width: 50%;
         height: auto;
     }
 
-    
-    .pendingListing{
+    .pendingListing {
         margin-top: 10rem !important;
     }
 
-    
-    
 }
 
-/* Mobile styles */
 @media (max-width: 767.98px) {
     .card1 {
         padding: 1rem;
     }
 
     .cardContentTitle {
-        font-size: 1.2rem; /* Adjust title font size for mobile */
+        font-size: 1.2rem;
     }
 
     .cardDesc {
-        font-size: 0.9rem; /* Adjust description font size for mobile */
+        font-size: 0.9rem;
     }
 
-    .startBtn_3 {
-        padding: 0.6rem 1rem; /* Adjust button size for mobile */
-    }
-
-    .TotalVal{
+    .TotalVal {
         width: 100%;
     }
-    .pendingListing{
+
+    .pendingListing {
         margin-top: 10rem !important;
     }
 }
 
-/* Tablet styles */
 @media (max-width: 991.98px) {
     .card1 {
         padding: 1rem;
     }
 
     .cardContentTitle {
-        font-size: 1.2rem; /* Adjust title font size for mobile */
+        font-size: 1.2rem;
     }
 
     .cardDesc {
-        font-size: 0.9rem; /* Adjust description font size for mobile */
+        font-size: 0.9rem;
     }
 
-    .startBtn_3 {
-        padding: 0.6rem 1rem; /* Adjust button size for mobile */
-    }
     .cardContent {
-        gap: 24px; /* Increase gap between elements on tablet */
-        margin-left:0 !important ;
+        gap: 24px;
+        margin-left: 0 !important;
     }
-    .card1_section{
+
+    .card1_section {
         height: 100vh !important;
     }
+
     .card2_Content {
-        gap: 24px; /* Increase gap between elements on tablet */
-        margin-left:0 !important ;
+        gap: 24px;
+        margin-left: 0 !important;
     }
-    .TotalVal{
+
+    .TotalVal {
         width: 100%;
     }
-    .card2_title{
+
+    .card2_title {
         font-size: 25px !important;
     }
 }
 
-/* Desktop styles */
 @media (min-width: 992px) {
     .cardSection {
-        width: 50%; /* Center and limit width on larger screens */
+        width: 50%;
     }
 
     .card1 {
         padding: 2rem;
     }
 
-    .cardContent{
+    .cardContent {
         margin-left: 5rem !important;
     }
+
     .cardContentTitle {
-        font-size: 1.5rem; /* Larger title font size for desktop */
+        font-size: 1.5rem;
     }
 
     .cardDesc {
-        font-size: 1rem; /* Regular font size for desktop */
+        font-size: 1rem;
     }
-    .TotalVal{
+
+    .TotalVal {
         width: 631px !important;
     }
-    .disply{
+
+    .disply {
         display: flex !important;
     }
-    .display{
+
+    .display {
         display: none !important;
     }
 }
