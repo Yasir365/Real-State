@@ -32,18 +32,17 @@
 }
 
 
-html,
-body {
+* {
     margin: 0;
     padding: 0;
-    overflow-x: hidden;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
 }
 
 body {
     max-width: 100%;
     overflow-x: hidden;
     margin: 0;
-    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
 p {
@@ -54,65 +53,26 @@ p {
 .backgroundImage {
     background-image: url(./images/background.png);
     background-size: cover;
-    /* Ensures the image covers the container fully */
     background-position: center center;
-    /* Centers the background image */
     background-repeat: no-repeat;
-    /* Prevents repeating the image */
     width: 100%;
     height: 100vh;
-    /* Ensures the container takes up the full viewport height */
     position: relative;
-    /* Use relative positioning to place content inside */
     z-index: 1;
-    /* Keep content visible above the background */
     bottom: 0;
-    /* Positions the background at the bottom */
 }
 
 
-.header {
-    position: relative;
-    background-color: rgba(255, 255, 255, 0.8);
-    /* Slightly transparent white for the base */
-    /* Optional: Uncomment for box-shadow or gradient
-    box-shadow: 0 4px 10px rgba(173, 216, 230, 0.5); 
-    background: linear-gradient(to bottom left, rgba(173, 216, 230, 0.4), rgba(255, 255, 255, 0.8)); 
-    */
-}
-
-.w-50 {
-    width: 50%;
-}
-
-.logo {
-    max-width: 150px;
-    /* Set a max-width for the logo */
-    height: auto;
-}
-
-/* Adjust the getStarted container */
-.getStarted {
-    background: #FFFFFF;
-    /* Light background for visibility */
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-/* styles removed */
 
 /* Whitepaper Styling */
 .whitepaper {
     padding: 0 16px;
-    /* Adjust padding */
     font-size: 16px;
     cursor: pointer;
 }
 
 .whitepaper1 {
     padding: 0 16px;
-    /* Adjust padding */
     font-size: 16px;
     cursor: pointer;
 }
@@ -124,18 +84,7 @@ p {
 }
 
 
-
-/* Dark Theme Toggle */
-.darkTheme {
-    display: flex;
-    align-items: center;
-    cursor: pointer;
-}
-
 .EN {
-    /* font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans",
-        "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
-        "Segoe UI Symbol", "Noto Color Emoji"; */
     font-size: 14px;
     font-weight: 400;
     color: #006FFF;
@@ -143,87 +92,14 @@ p {
 
 .vector img {
     width: 14px;
-    /* Adjust icon size */
     height: auto;
-    /* Maintain aspect ratio */
     display: flex;
     align-items: center;
 }
-
-/* Start Button Styling */
-.startBtn {
-    /* margin-top: 1rem; */
-    background: #006FFF;
-    color: #ffffff;
-    border: none;
-    border-radius: 20px;
-    padding: 8px 12px;
-    /* Adjust padding */
-    display: flex;
-    align-items: center;
-    width: 155px;
-    height: 34px;
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 24px;
-    text-align: center;
-    cursor: pointer;
-}
-
-.startBtn a{
-    text-decoration: none;
-
-}
-
-.startBtn_4 {
-    margin-top: 1rem;
-    background: #006FFF;
-    color: #ffffff;
-    border: none;
-    border-radius: 20px;
-    padding: 8px 12px;
-    /* Adjust padding */
-    display: flex;
-    align-items: center;
-    width: 148px;
-    height: 34px;
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 24px;
-    text-align: center;
-    cursor: pointer;
-}
-
 
 
 .startText {
     margin-right: 5px;
-    /* Space between text and icon */
-}
-
-
-
-
-.startBtn_2 {
-    width: 138px;
-    height: 36px;
-    top: 715px;
-    left: 199px;
-    gap: 0px;
-    opacity: 0px;
-    background: #006FFF;
-    color: #ffffff;
-    border: none;
-    border-radius: 20px;
-    padding: 8px 12px;
-    /* Adjust padding */
-    display: flex;
-    align-items: center;
-}
-
-.gif {
-    width: 100%;
-    height: 501px;
 }
 
 .aboutContainer {
@@ -236,119 +112,14 @@ p {
     opacity: 0px;
 }
 
-
-
-.aboutTitle {
-    width: 692.4px;
-    height: 443.6px;
-    top: 251px;
-    left: 199px;
-    gap: 0px;
-    opacity: 0px;
-}
-
-.about_desc {
-    width: 50%;
-    /* height: 379px; */
-}
-
-
-
-.about_2 {
-    /* font-family: Lato; */
-    font-size: 15.88px;
-    font-weight: 400;
-    line-height: 24px;
-    text-align: left;
-    /* color: #737373; */
-    width: 100%;
-    /* font-family: torque sans-serif; */
-    color: var(--black);
-}
-
-
 .token_main {
     margin-top: 30px;
 }
-
-
 
 input.form-control {
     display: block !important;
     visibility: visible !important;
     width: 100%;
-    /* Ensure the input takes full width */
-}
-
-.card_7 {
-    width: 100%;
-    height: 117px;
-    text-align: left;
-    gap: 0px;
-    opacity: 0px;
-    color: #475569;
-}
-
-.card_8 {
-    width: 746px;
-    height: 88px;
-    text-align: left;
-    gap: 0px;
-    opacity: 0px;
-    color: #475569;
-}
-
-.card_9 {
-    width: 56px;
-    height: 56px;
-    justify-content: center;
-}
-
-.tokenmics_title {
-    width: 707px;
-    height: 136px;
-    top: 2776px;
-    left: 272px;
-    font-size: 15.88px;
-    font-weight: 400;
-    line-height: 34px;
-    text-align: left;
-
-}
-
-.tokenomic_img {
-    width: 598px;
-    height: 527.46px;
-    display: flex;
-}
-
-.tokenomic_2 {
-    width: 210px;
-    top: 2598px;
-    left: 1237px;
-    font-size: 16px;
-    font-weight: 800;
-    line-height: 28px;
-    text-align: left;
-
-}
-
-.tokenomic_3 {
-    width: 265px;
-    top: 2598px;
-    left: 1237px;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 29.25px;
-    text-align: left;
-}
-
-p.tokenomic_3 {
-    margin: unset !important;
-}
-
-p.tokenomic_2 {
-    margin: unset !important;
 }
 
 .title {
@@ -356,58 +127,28 @@ p.tokenomic_2 {
     font-weight: 900;
     line-height: 48px;
     text-align: center;
-    /* width: 83px; */
     height: 48px;
 }
 
-
-.gover_main {
-    width: 100%;
-    height: 379px;
-    justify-content: center !important;
-}
-
-.community_paragraph {
-    width: 486px;
-    height: 180px;
-    gap: 12px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-
 .contact_image {
     position: relative;
-    /* Position relative for absolute positioning of the ball */
     background-image: url('./images/contact.png');
     background-size: cover;
-    /* Make sure the contact image covers the container */
     height: 464px;
     border-radius: 80px;
     overflow: hidden;
-    /* Ensure no overflow of ball image */
 }
 
 .contact_image::before {
     content: '';
-    /* Create a pseudo-element */
     position: absolute;
-    /* Position it absolutely within the container */
     top: 20px;
-    /* Adjust as needed */
     left: 20px;
-    /* Adjust as needed */
     background-image: url('./images/balls.png');
     background-size: contain;
-    /* Adjust size to fit */
     width: 100%;
-    /* Set the desired width */
     height: 100vh;
-    /* Set the desired height */
     z-index: 1;
-    /* Ensure it's above the background */
 }
 
 .contact_0 {
@@ -456,26 +197,17 @@ p.tokenomic_2 {
 
 .form-control {
     width: 316px;
-    /* Fixed width */
     height: 62px;
-    /* Fixed height */
     gap: 6.61px;
-    /* Note: 'gap' does not apply to input elements */
     border-radius: 21px 0 0 0;
-    /* Rounded corners */
     border: 1.32px solid transparent;
-    /* Border color and width */
     background-color: rgba(255, 255, 255, 0);
-    /* Optional: transparent background */
 }
 
 .form-group {
     position: relative;
-    /* Ensures proper positioning for children */
 }
 
-
-/* input field style  */
 .mat-form-field {
     width: 316px;
     height: 62px;
@@ -508,7 +240,6 @@ p.tokenomic_2 {
     padding: 16px 6.61px 16px 23.79px;
     border-radius: 21px 21px 21px 21px;
     border: 1.32px solid #AEBED7;
-    /* Change border color based on state */
     position: relative;
     display: flex;
     flex-direction: column;
@@ -521,7 +252,6 @@ p.tokenomic_2 {
     left: 23.79px;
     font-size: 14px;
     color: #999;
-    /* Light color for the label */
     transition: all 0.2s ease-in-out;
 }
 
@@ -529,25 +259,17 @@ p.tokenomic_2 {
     width: 100%;
     height: 100%;
     border: none;
-    /* Remove default border */
     outline: none;
-    /* Remove outline on focus */
     font-size: 16px;
-    /* Set input font size */
     border-radius: 21px;
-    /* Match field border radius */
     background: transparent;
-    /* Make background transparent */
     color: #FFFFFF;
 }
 
 
 .mat-input::placeholder {
     color: #FFFFFF;
-    /* Placeholder color */
     opacity: 1;
-    /* Ensure the placeholder is visible */
-    /* font-family: Poppins; */
     font-size: 20px;
     font-weight: 500;
     line-height: 30px;
@@ -558,26 +280,17 @@ p.tokenomic_2 {
     width: 100%;
     height: 100%;
     border: none;
-    /* Remove default border */
     outline: none;
-    /* Remove outline on focus */
     font-size: 16px;
-    /* Set input font size */
     border-radius: 21px;
-    /* Match field border radius */
     background: transparent;
-    /* Make background transparent */
     color: #FFFFFF;
     position: relative;
-    /* top: -3rem; */
 }
 
 .mat-input1::placeholder {
     color: #FFFFFF;
-    /* Placeholder color */
     opacity: 1;
-    /* Ensure the placeholder is visible */
-    /* font-family: Poppins; */
     font-size: 20px;
     font-weight: 500;
     line-height: 30px;
@@ -588,13 +301,9 @@ p.tokenomic_2 {
 .mat-input1:focus+.mat-label,
 .mat-input1:not(:placeholder-shown)+.mat-label {
     top: -10px;
-    /* Move label up */
     left: 10px;
-    /* Keep left space */
     font-size: 14px;
-    /* Smaller font size */
     color: #FFFFFF;
-    /* Change label color on focus */
 }
 
 .mat-input:focus+.mat-label,
@@ -603,44 +312,6 @@ p.tokenomic_2 {
     left: 23.79px;
     font-size: 12px;
     color: #6200ea;
-    /* Color change for active state */
-}
-
-
-
-.mat-input2::placeholder {
-    color: #6200ea;
-    /* Placeholder color */
-    opacity: 1;
-    /* Ensure the placeholder is visible */
-    /* font-family: Poppins; */
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 30px;
-    text-align: left;
-    border: none;
-
-}
-
-.mat-input2:focus+.mat-label,
-.mat-input2:not(:placeholder-shown)+.mat-label {
-    top: -10px;
-    /* Move label up */
-    left: 10px;
-    /* Keep left space */
-    font-size: 14px;
-    /* Smaller font size */
-    color: #6200ea;
-    /* Change label color on focus */
-}
-
-.mat-input2:focus+.mat-label,
-.mat-input2:not(:placeholder-shown)+.mat-label {
-    top: -18px;
-    left: 23.79px;
-    font-size: 12px;
-    color: #6200ea;
-    /* Color change for active state */
 }
 
 .msgBtn {
@@ -659,15 +330,6 @@ p.tokenomic_2 {
     color: #FFFFFF;
 }
 
-/* end */
-
-
-
-
-/* Make it responsive */
-/* Responsive Styles */
-
-/* Tablet View */
 @media (max-width: 992px) {
     .footer_4 {
         display: none !important;
@@ -683,18 +345,6 @@ p.tokenomic_2 {
 
     .EN {
         font-size: 13px;
-    }
-
-    .startBtn {
-        /* width: 130px; */
-        height: 32px;
-        font-size: 15px;
-    }
-
-    .gif {
-        position: absolute;
-        z-index: -1;
-        width: 100% !important;
     }
 
     .aboutMain {
@@ -714,26 +364,6 @@ p.tokenomic_2 {
         opacity: 0px;
     }
 
-    .aboutTitle {
-        width: 100%;
-        height: 530.6px !important;
-        top: 251px;
-        left: 199px;
-        gap: 0px;
-        opacity: 0px;
-    }
-
-    .about_2 {
-        /* font-family: Lato; */
-        font-size: 15.88px;
-        font-weight: 400;
-        line-height: 24px;
-        text-align: left;
-        color: #737373;
-        width: 619px !important;
-        height: 120px;
-    }
-
     .token_1 {
         width: 100% !important;
     }
@@ -742,32 +372,10 @@ p.tokenomic_2 {
         display: none !important;
     }
 
-    .card_3 {
-        width: 321px;
-    }
 
-    .card_2 {
-        font-size: 14px !important;
-    }
-
-    .card_6 {
-        width: 336px;
-    }
-
-    .card_7 {
-        width: 436px !important;
-    }
-
-    .card_ {
-        margin-top: 35px !important;
-    }
 
     .tokenomicSection {
         flex-direction: column !important;
-    }
-
-    .tokenomic_img {
-        margin-top: 4rem !important;
     }
 
     .title {
@@ -930,10 +538,6 @@ p.tokenomic_2 {
         font-size: 14px;
     }
 
-    .startBtn {
-        width: 140px;
-    }
-
     .EN {
         font-size: 12px;
     }
@@ -975,41 +579,12 @@ p.tokenomic_2 {
         padding-left: 1rem !important;
     }
 
-    .startBtn_2 {
-        width: 113px;
-        height: 30px;
-        font-size: 11px;
-        margin-top: 3rem;
-        margin-left: 1rem !important;
-    }
-
     .hero_title {
         width: 22rem;
     }
 
-    .gif {
-        position: absolute !important;
-        z-index: -1 !important;
-        top: 9rem !important;
-        width: 100% !important;
-        height: auto !important;
-    }
-
-    .aboutTitle {
-        width: 94%;
-        align-items: center;
-        height: 20vh !important;
-    }
-
     img.about {
         width: 58%;
-    }
-
-
-    .startBtn_3 {
-        position: relative;
-        top: 5rem;
-        margin-left: 1rem;
     }
 
     .token_main {
@@ -1042,68 +617,10 @@ p.tokenomic_2 {
         margin-right: 0 !important;
     }
 
-    .card_ {
-        width: 94%;
-        margin-top: 3rem;
-    }
-
-    .card_1 {
-        width: 100% !important;
-    }
-
-    .card_3 {
-        display: flex;
-        width: 100%;
-    }
-
-    .card_5 {
-        display: flex;
-        width: 100%;
-
-    }
-
-    .card_6 {
-        display: flex;
-        width: 100%;
-
-    }
-
-    .card_7 {
-        display: flex;
-        width: 100% !important;
-
-    }
-
-    .card_8 {
-        display: flex;
-        width: 100%;
-
-    }
-
-    .tokenmics_title {
-        width: 97%;
-        height: 47vh;
-    }
-
-
-
     .tokenImg_ {
         width: 70% !important;
         height: auto !important;
         margin-top: 1rem;
-    }
-
-    .tokenomic_1 {
-        position: unset !important;
-        width: 100% !important;
-        padding-left: 1rem !important;
-
-    }
-
-    .tokenomic_4 {
-        position: unset !important;
-        padding-left: 1rem !important;
-        width: 100% !important;
     }
 
     .hide {
@@ -1115,22 +632,8 @@ p.tokenomic_2 {
         height: 30vh !important;
     }
 
-    .gover_main {
-        width: 732px;
-        height: 379px;
-        justify-content: start !important;
-    }
-
     .community_1 {
         width: 100% !important;
-    }
-
-    .startBtn_4 {
-        margin-top: 5.5rem;
-    }
-
-    .gover_main {
-        width: 100%;
     }
 
     .governance {
@@ -1223,9 +726,9 @@ p.tokenomic_2 {
         width: 648px;
     }
 
-    .header {
+    /* .header {
         height: 15vh;
-    }
+    } */
 
     section#about {
         padding-bottom: 0 !important;
@@ -1267,17 +770,6 @@ p.tokenomic_2 {
     }
 }
 
-
-.tokenomic_1 {
-    position: relative;
-    right: 28rem;
-}
-
-.tokenomic_4 {
-    position: relative;
-    top: 6rem;
-    right: 36rem;
-}
 
 .copyright {
     position: relative;
